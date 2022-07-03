@@ -1,4 +1,4 @@
-package main
+package gcloudfunc
 
 import (
 	"net/http"
