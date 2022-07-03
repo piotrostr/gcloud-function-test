@@ -1,13 +1,17 @@
 #!/bin/bash
 
+project_name=green-badger
+
 # create a project
-# TODO
+gcloud projects create $project_name
 
 # enable the APIs: 
 
 # cloud function
+gcloud services enable cloudfunctions.googleapis.com
 
 # cloud build
+gcloud services enable cloudbuild.googleapis.com
 
 # deploy function
 gcloud functions deploy Handler \
